@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Syncopate" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div id="content">
+    <span class="slide">
+        <a href="#" onclick="openSlideMenu()">
+            <i class="fas fa-bars"></i>
+        </a>
+    </span>
+        <div id="menu" class="nav">
+            <a href="#" class="close"
+               onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+            </a>
+            <ul>
+
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li><a href="gallery.html">Port/Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><img src="images/logo.png"></li>
+            </ul>
+        </div>
+        <ul class="fly-in-text hidden">
+            <li>C</li>
+            <li>O</li>
+            <li>N</li>
+            <li>T</li>
+            <li>A</li>
+            <li>C</li>
+            <li>T</li>
+        </ul>
+        <!-- Social Media Sticky Bar -->
+        <div class="icon-bar">
+            <a href="https://pt-br.facebook.com/" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/?lang=pt" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" class="linkedin"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" class="youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</header>
+<section class="site-page">
+    <div class="contact-container">
+        <div class="contact-form"> <!-- Contact Form all Working well -->
+            <h2>Keep in touch with me</h2>
+            <form method="post" action="#">
+                <input type="text" name="" class="textField" placeholder="Your Name" required="">
+                <input type="email" name="" class="textField" placeholder="Your Email Address" required="">
+                <textarea cols="6" rows="6" class="messageField" placeholder="Your Good Message" required=""></textarea>
+                <input type="submit" name="" value="Send Message" class="submiteButton">
+            </form>
+        </div>
+    </div>
+</section>
+<section class="site-page">
+    <div class="contact-container">
+    <div class="contact-map"> <!-- GOOGLE MAPS EMBED -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.2514864450964!2d-6.2593639363842675!3d53.35665402174277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e62a87ece55%3A0x6e2e3602e0fa2457!2sDorset+College!5e0!3m2!1spt-BR!2sbr!4v1558066514526!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    </div>
+</section>
+
+<!-- Footer Social Media Icons and Copyright Section -->
+<footer>
+    <div class="copyright">
+        <p>©  All rights reserved | Bruno N. Borges. </p>
+        <div class="media-icons">
+            <a href="https://pt-br.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></a></i>
+            <a href="https://twitter.com/?lang=pt" target="_blank"><i class="fab fa-twitter-square"></a></i>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square"></a></i>
+            <a href="https://maps.google.com/" target="_blank"><i class="fas fa-map-marker-alt"></a></i>
+        </div>
+    </div>
+</footer>
+<script>
+    function openSlideMenu(){
+        document.getElementById('menu').style.width = '250px';
+        document.getElementById('content').style.marginLeft = '250px';
+    }
+    function closeSlideMenu(){
+        document.getElementById('menu').style.width = '0';
+        document.getElementById('content').style.marginLeft = '0';
+    }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        setTimeout(function() {
+            $('.fly-in-text').removeClass('hidden');
+        }, 500);
+
+    });
+
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+</body>
+</html>
